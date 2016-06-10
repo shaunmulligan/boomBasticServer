@@ -27,13 +27,10 @@ password = ${MOPIDY_SPOTIFY_PASSWORD:-}
 [touchscreen]
 enabled = true
 sdl_fbdev = /dev/fb0
-sdl_mousdrv = TSLIB
-sdl_mousedev = event0
 screen_width = 800
 screen_height = 480
 resolution_factor = 8
 cursor = true
-fullscreen = true
 cache_dir = $XDG_CACHE_DIR/mopidy/touchscreen
 
 [youtube]
