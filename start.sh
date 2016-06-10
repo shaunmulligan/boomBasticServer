@@ -37,6 +37,10 @@ cache_dir = $XDG_CACHE_DIR/mopidy/touchscreen
 
 [youtube]
 enabled = ${MOPIDY_YOUTUBE_ENABLED:-true}
+
+[audio]
+#output = autoaudiosink
+output = audioresample ! audioconvert ! audio/x-raw,rate=48000,channels=2,format=S16LE ! wavenc ! filesink location=/tmp/snapfifo
 EOF
 
 mopidy
