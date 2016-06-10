@@ -25,7 +25,16 @@ username = ${MOPIDY_SPOTIFY_USERNAME:-}
 password = ${MOPIDY_SPOTIFY_PASSWORD:-}
 
 [touchscreen]
-enabled = ${MOPIDY_PITFT_ENABLED:-false}
+sdl_fbdev = /dev/fb0
+sdl_mousdrv = TSLIB
+sdl_mousedev = event0
+enabled = True
+screen_width = 800
+screen_height = 480
+resolution_factor = 8
+cursor = True
+fullscreen = True
+cache_dir = $XDG_CACHE_DIR/mopidy/touchscreen
 
 [youtube]
 enabled = ${MOPIDY_YOUTUBE_ENABLED:-true}
