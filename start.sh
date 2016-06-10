@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd snapcast && make installserver && make installclient && cd -
+
 mkdir -p /root/.config/mopidy
 
 MOPIDY_CONFIG='/root/.config/mopidy/mopidy.conf'

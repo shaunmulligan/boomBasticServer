@@ -29,7 +29,7 @@ RUN pip install \
 
 RUN git clone https://github.com/badaix/snapcast.git
 RUN cd snapcast/externals && git submodule update --init --recursive
-RUN cd snapcast && make && make installserver && make installclient
+RUN cd snapcast && make
 
 
 COPY start.sh /start.sh
